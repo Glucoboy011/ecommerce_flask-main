@@ -4,54 +4,54 @@ from app.model.product import Product
 
 home_bp = Blueprint('home', __name__)
 
-categories = [Category(1, "Eletrônicos"), Category(2, "Livros"), Category(3, "Outros")]
+categories = [Category(1, "Bandeiras de Estados"), Category(2, "Bandeiras de Países"), Category(3, "Bandeiras de Cidades e Clubes Esportivos "), Category(4, "Símbolos e Brasões")]
 products = [
-    Product(1, "Câmera", 1200.00, 1, "Câmera digital de alta resolução.", [
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg"
+    Product(1, "Bandeira do Acre", 35.99, 1, "1.35x1.93m", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-acre-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-acre-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-acre-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-acre-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-acre-reta.jpg",
     ]),
-    Product(2, "Livro de Python", 45.00, 2, "Aprenda Python facilmente.", [
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
+    Product(2, "Bandeira do Afeganistão", 55.99, 2, "Tamanho 1.80x2.56m", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/paises/bandeira-paises-afeganistao-reta.jpg",
     ]),
-    Product(3, "Action Figure Spider-Man", 29.95, 3, "Boneco articulado do Spider-Man, perfeito para colecionadores.", [
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
+    Product(3, "Bandeira do Rio Grande do Sul", 35.99, 1, "Tamanho 1.35x1.93m", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-rio-grande-do-sul-reta.jpg",
     ]),
-    Product(4, "Carro Hot Wheels", 9.99, 3, "Carro Hot Wheels edição limitada, modelo esportivo.", [
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
+    Product(4, "Bandeira do Estado de São Paulo", 35.99, 1, "Tamanho 1.35x1.93m", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/estados/bandeira-estado-sao-paulo-reta.jpg",
     ]),
-    Product(5, "Mouse Gamer RGB", 35.00, 3, "Mouse gamer com iluminação RGB e alta precisão.", [
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
+    Product(5, "Bandeira Oficial do Brasil - Modelo Bordado em Cetim", 69.99, 2, "Tamanho 2.25x3.20m", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/brasil/bandeira-brasil-cetim-bordada.jpg",
     ]),
-    Product(6, "Cadeira de Escritório Ergonômica", 189.99, 3, "Cadeira de escritório ergonômica com suporte lombar ajustável.", [
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
+    Product(6, "Bandeiras de Municípios Brasileiros", 179.99, 3, "Diversos Tamanhos", [
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
+        "https://www.bandeira1.com.br/lojas/00002028/prod/diversas/bandeiras-diversas-municipios.jpg?cccfc=2d4c0e6e",
     ])
 ]
 

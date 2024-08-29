@@ -4,7 +4,7 @@ from app.model.category import Category
 
 category_bp = Blueprint('category', __name__)
 
-categories = [Category(1, "Eletrônicos"), Category(2, "Livros"), Category(3, "Casa e Cozinha")]
+categories = [Category(1, "Bandeiras de Estados"), Category(2, "Bandeiras de Países"), Category(3, "Bandeiras de Cidades e Clubes Esportivos "), Category(4, "Símbolos e Brasões")]
 
 @category_bp.route('/categories')
 def list_categories():

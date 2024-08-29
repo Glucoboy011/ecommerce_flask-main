@@ -8,19 +8,29 @@
 </head>
 <body>
     <header>
-        <a href="{{ url_for('home.home') }}">Home</a>
-        <a href="{{ url_for('cart.view_cart') }}">Carrinho</a>
+        <div class="logo">
+            <a href="/"><img src="https://th.bing.com/th/id/OIP.V3tYcFTCQjKJkSBiP3rbDAHaHa?rs=1&pid=ImgDetMain" alt="Logo"></a>
+        </div>
+        <h1>Bandeiras.com</h1>
+        <input type="text" placeholder="Buscar produtos...">
+            <a href="{{ url_for('cart.view_cart') }}"><img src="https://cdn-icons-png.flaticon.com/128/14821/14821177.png" alt="Carrinho"></a>
+        <div class="user">
+            <a href="user.html"><img src="https://t3.ftcdn.net/jpg/05/60/26/08/240_F_560260880_O1V3Qm2cNO5HWjN66mBh2NrlPHNHOUxW.jpg" alt="Usuário"></a>
+        </div>
     </header>
     <h1>{{ product.name }}</h1>
-    <img src="{{ product.images[0] }}" alt="{{ product.name }}">
+    <div class="detail">
+        <img src="{{ product.images[0] }}" alt="{{ product.name }}">
+    </div>
     <p>Preço: ${{ product.price }}</p>
     <p>{{ product.description }}</p>
     <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
         <input type="number" name="quantity" value="1" min="1">
         <button type="submit">Adicionar ao Carrinho</button>
     </form>
+    <br><br>
     <footer>
-        <p>© 2024 Nossa Loja Online. Todos os direitos reservados.</p>
+        <p>© 2024 Bandeiras.com. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

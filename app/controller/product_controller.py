@@ -15,3 +15,4 @@ def product_detail(product_id):
         return render_template('product_detail.html', product=product)
     else:
         return "Produto não encontrado", 404
+    
